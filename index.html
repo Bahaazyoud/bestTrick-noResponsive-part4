@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bestTrick4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="bestTrick.css">
+
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>basketball</h1>
+        <span>basketball life</span>
+    </div>
+    <div class="wwrapper">
+        <div class="nav">
+            <div class="logo">
+                <h1>
+                    <span>basket<br>ball</span><br> basketball life
+                </h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>home</li>
+                    <li>basketball</li>
+                    <li>contact us</li>
+                </ul>
+            </div>
+            <div class="scroll">scroll</div>
+        </div>
+        <div class="text">
+            <div class="title">basketball</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Eaque id, possimus sit quo ipsum quam?</p>
+        </div>
+        <div class="watch">
+            <div class="fa fa-play"></div>
+            <a href="#"> watch now !</a>
+        </div>
+        <div class="media">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
+        <div class="ellipse-container">
+            <div class="ellipse thin"></div>
+            <div class="ellipse thick"></div>
+            <div class="ellipse orange"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <script>
+        TweenMax.to(".overlay", 2, {
+            delay: 1,
+            right: "-100%",
+            ease: Expo.easeInOut
+        })
+        TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            x: -500,
+            ease: Expo.easeInOut
+        })
+        TweenMax.to(".overlay span", 2, {
+            delay: .3,
+            opacity: 0,
+            x: 500,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".ellipse-container", 1, {
+            delay: .3,
+            opacity: 0,
+
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".orange", 2, {
+            delay: 2,
+            opacity: 0,
+
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".circle1", 1, {
+            delay: 2,
+            left: "-100%",
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".circle2", 1, {
+            delay: 2,
+            opacity: 0,
+            right: "-100%",
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line", 1, {
+            delay: 2,
+            opacity: 0,
+            ease: Expo.linear
+        })
+        TweenMax.from(".logo", 1, {
+            delay: 2,
+            opacity: 0,
+            width: "0",
+            ease: Expo.linear
+        })
+    </script>
+</body>
+
+</html>
